@@ -8,8 +8,12 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.firstlinedevs.eldereye.R
 import com.firstlinedevs.eldereye.databinding.FragmentDashboardBinding
+import com.firstlinedevs.eldereye.recyclerpackage.CameraProvider
+import com.firstlinedevs.eldereye.recyclerpackage.adapter.CameraAdapter
 
 class DashboardFragment : Fragment() {
 
@@ -32,7 +36,14 @@ class DashboardFragment : Fragment() {
         dashboardViewModel.text.observe(viewLifecycleOwner) {
 
         }
+        initRecyclerView()
         return root
+    }
+
+    private fun initRecyclerView(){
+        val recyclerView = activity?.findViewById<RecyclerView>(R.id.recyclerCameras)
+        recyclerView?.layoutManager = LinearLayoutManager(context?.applicationContext)
+        recyclerView?.adapter = CameraAdapter(CameraProvider.cameraList)
     }
 
     override fun onDestroyView() {

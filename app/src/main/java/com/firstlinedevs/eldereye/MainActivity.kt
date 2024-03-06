@@ -7,8 +7,12 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.firstlinedevs.eldereye.ElderEyeApplication.Companion.prefs
 import com.firstlinedevs.eldereye.databinding.ActivityMainBinding
+import com.firstlinedevs.eldereye.recyclerpackage.CameraProvider
+import com.firstlinedevs.eldereye.recyclerpackage.adapter.CameraAdapter
 import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
