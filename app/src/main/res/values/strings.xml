@@ -8,4 +8,7 @@
     <string name="password">Contraseña</string>
     <string name="register"><u>Registrarse</u></string>
     <string name="defaultCredentials">Usuario: user\nContraseña: 123456</string>
+    <string name="title_person">Persona</string>
+    <string name="title_cameras">Cámaras</string>
+    <string name="title_settings">Ajustes</string>
 </resources>

@@ -20,6 +20,7 @@ class LoginActivity : AppCompatActivity() {
     private fun initUI(){
         if(!prefs.getName().equals("")){
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 
@@ -38,6 +39,7 @@ class LoginActivity : AppCompatActivity() {
             if(etUser.text.toString().equals("user") && etPassword.text.toString().equals("123456")){
                 prefs.saveName("user")
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             } else{
                 errorLoginDialog.show()
             }
