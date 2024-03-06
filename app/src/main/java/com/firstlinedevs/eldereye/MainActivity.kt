@@ -7,6 +7,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.firstlinedevs.eldereye.ElderEyeApplication.Companion.prefs
 import com.firstlinedevs.eldereye.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -31,5 +32,9 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    override fun onBackPressed() {
+
     }
 }

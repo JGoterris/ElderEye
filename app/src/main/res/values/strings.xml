@@ -4,4 +4,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="register"><u>Registrarse</u></string>
+    <string name="defaultCredentials">Usuario: user\nContraseña: 123456</string>
 </resources>
