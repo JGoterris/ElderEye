@@ -14,12 +14,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0"/>
+        app:layout_constraintVertical_bias="0"
+        android:paddingBottom="55dp"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/optionsCamera"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,8 +28,8 @@
 
         <ImageView
             android:id="@+id/opCPerson"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_person"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -36,12 +37,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/greyOptions"
-            app:layout_constraintHorizontal_bias="0.35"/>
+            app:layout_constraintHorizontal_bias="0.4"/>
 
         <ImageView
             android:id="@+id/opCCamera"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_screen"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,8 +53,8 @@
 
         <ImageView
             android:id="@+id/opCSettings"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_settings"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -61,11 +62,11 @@
             app:layout_constraintStart_toEndOf="@+id/opCCamera"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/greyOptions"
-            app:layout_constraintHorizontal_bias="0.65"/>
+            app:layout_constraintHorizontal_bias="0.6"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/fabAddCamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"

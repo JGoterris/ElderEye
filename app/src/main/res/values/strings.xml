@@ -11,4 +11,5 @@
     <string name="title_person">Persona</string>
     <string name="title_cameras">Cámaras</string>
     <string name="title_settings">Ajustes</string>
+    <string name="add_camera">Añadir cámara</string>
 </resources>

@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
         val registerClickedDialog = AlertDialog.Builder(this)
         registerClickedDialog.setTitle("No implementado")
         registerClickedDialog.setMessage("Debido a que esta es una aplicación prototipo, esta opción no está disponible")
-        registerClickedDialog.setPositiveButton(android.R.string.yes) { dialog, which ->}
+        registerClickedDialog.setPositiveButton("Aceptar") { dialog, which ->}
 
         tvRegister.setOnClickListener {
             registerClickedDialog.show()

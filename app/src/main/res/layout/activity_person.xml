@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/optionsCamera"
         android:layout_width="0dp"
-        android:layout_height="70dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/opPPerson"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_person"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -27,12 +27,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/resaltarOption"
-            app:layout_constraintHorizontal_bias="0.35"/>
+            app:layout_constraintHorizontal_bias="0.4"/>
 
         <ImageView
             android:id="@+id/opPCamera"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_screen"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +43,8 @@
 
         <ImageView
             android:id="@+id/opPSettings"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
             android:src="@drawable/ic_settings"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,7 +52,7 @@
             app:layout_constraintStart_toEndOf="@+id/opPCamera"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/greyOptions"
-            app:layout_constraintHorizontal_bias="0.65"/>
+            app:layout_constraintHorizontal_bias="0.6"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,4 +13,6 @@
     <color name="optionsBackground">#7EA6DB</color>
     <color name="resaltarOption">#2E4FFD</color>
     <color name="greyOptions">#303030</color>
+    <color name="softGrey">#C1C1C1</color>
+    <color name="red">#FF0000</color>
 </resources>
