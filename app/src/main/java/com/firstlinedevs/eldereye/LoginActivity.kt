@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import com.firstlinedevs.eldereye.ElderEyeApplication.Companion.prefs
+import com.firstlinedevs.eldereye.recyclerpackage.CameraProvider
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:text="Nombre:"
         android:textColor="@color/black"
         android:textSize="17dp"
@@ -102,10 +102,20 @@
         app:layout_constraintStart_toStartOf="@+id/etIp"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Debido a que esta es una aplicación de prueba, las cámaras agregadas no se guardarán al salir de la aplicación"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
     <View
         android:layout_width="wrap_content"
         android:layout_height="15dp"
-        app:layout_constraintTop_toBottomOf="@id/etPort"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

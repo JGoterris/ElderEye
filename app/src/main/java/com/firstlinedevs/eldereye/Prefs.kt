@@ -2,6 +2,7 @@ package com.firstlinedevs.eldereye
 
 import android.content.Context
 
+
 class Prefs (val context: Context) {
 
     val SHARED_NAME = "ElderEye_db"
