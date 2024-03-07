@@ -19,7 +19,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun initUI(){
         if(!prefs.getName().equals("")){
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, PersonActivity::class.java))
             finish()
         }
     }
@@ -38,7 +38,7 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener {
             if(etUser.text.toString().equals("user") && etPassword.text.toString().equals("123456")){
                 prefs.saveName("user")
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, PersonActivity::class.java))
                 finish()
             } else{
                 errorLoginDialog.show()

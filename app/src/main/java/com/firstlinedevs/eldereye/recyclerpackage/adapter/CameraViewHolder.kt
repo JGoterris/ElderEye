@@ -6,9 +6,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.firstlinedevs.eldereye.R
 import com.firstlinedevs.eldereye.recyclerpackage.CameraData
+import com.google.android.material.imageview.ShapeableImageView
 
 class CameraViewHolder(view: View) : RecyclerView.ViewHolder(view){
-    val ivPhoto = view.findViewById<ImageView>(R.id.ivPhoto)
+    val ivPhoto = view.findViewById<ShapeableImageView>(R.id.ivPhoto)
     val tvCameraName = view.findViewById<TextView>(R.id.tvCameraName)
 
     fun render(cameraModel: CameraData){

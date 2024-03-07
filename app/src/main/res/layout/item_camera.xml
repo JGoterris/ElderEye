@@ -4,22 +4,23 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:paddingHorizontal="16dp"
-    android:paddingVertical="16dp">
+    android:paddingHorizontal="16dp">
     
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ivPhoto"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="170dp"
         tools:src="@drawable/camera1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:scaleType="centerCrop"/>
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:shapeAppearance="@style/cameraRadius"/>
 
     <ImageView
         android:id="@+id/ivStart"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:src="@drawable/ic_play"
         android:alpha="0.6"
         app:tint="@color/black"
@@ -39,10 +40,9 @@
         android:shadowDx="@integer/material_motion_duration_long_1"
         android:shadowDy="@integer/material_motion_duration_long_1"
         android:shadowRadius="@integer/material_motion_duration_long_1"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:layout_marginStart="10dp"
         android:layout_marginBottom="5dp"
         app:layout_constraintBottom_toBottomOf="@id/ivPhoto"
         app:layout_constraintStart_toStartOf="@id/ivPhoto"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

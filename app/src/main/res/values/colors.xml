@@ -12,4 +12,5 @@
     <color name="blueLink">#516DFF</color>
     <color name="optionsBackground">#7EA6DB</color>
     <color name="resaltarOption">#2E4FFD</color>
+    <color name="greyOptions">#303030</color>
 </resources>
