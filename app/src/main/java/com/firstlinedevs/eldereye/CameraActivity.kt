@@ -47,6 +47,15 @@ class CameraActivity : AppCompatActivity() {
             finish()
         }
 
+        val opCSettings = findViewById<ImageView>(R.id.opCSettings)
+        val settingsIntent = Intent(this,SettingsActivity::class.java)
+
+        settingsIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+        opCSettings.setOnClickListener {
+            startActivity(settingsIntent)
+            finish()
+        }
+
         val fabAddCamera = findViewById<FloatingActionButton>(R.id.fabAddCamera)
         fabAddCamera.setOnClickListener {
             mostrarDialogoAnadirCamara()

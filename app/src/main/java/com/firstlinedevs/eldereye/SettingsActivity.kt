@@ -5,29 +5,29 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 
-class PersonActivity : AppCompatActivity() {
+class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_person)
+        setContentView(R.layout.activity_settings)
+        setTitle("Ajustes")
 
-        this.setTitle(R.string.title_person)
         initListeners()
     }
 
     private fun initListeners(){
-        val opPCamera = findViewById<ImageView>(R.id.opPCamera)
+        val opSCamera = findViewById<ImageView>(R.id.opSCamera)
         val cameraIntent = Intent(this,CameraActivity::class.java)
         cameraIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-        opPCamera.setOnClickListener {
+        opSCamera.setOnClickListener {
             startActivity(cameraIntent)
             finish()
         }
 
-        val opPSettings = findViewById<ImageView>(R.id.opPSettings)
-        val settingsIntent = Intent(this,SettingsActivity::class.java)
-        settingsIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-        opPSettings.setOnClickListener {
-            startActivity(settingsIntent)
+        val opSPerson = findViewById<ImageView>(R.id.opSPerson)
+        val personIntent = Intent(this,PersonActivity::class.java)
+        personIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+        opSPerson.setOnClickListener {
+            startActivity(personIntent)
             finish()
         }
     }
