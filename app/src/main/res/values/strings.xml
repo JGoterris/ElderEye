@@ -12,4 +12,8 @@
     <string name="title_cameras">Cámaras</string>
     <string name="title_settings">Ajustes</string>
     <string name="add_camera">Añadir cámara</string>
+    <string name="nombreAbuelo"><b>Nombre:  </b></string>
+    <string name="edadAbuelo"><b>Edad:</b></string>
+    <string name="telefonoAbuelo"><b>Teléfono:</b></string>
+    <string name="direccion"><b>Dirección:</b> Av. Vicent Sos Baynat, s/n, Castelló</string>
 </resources>
