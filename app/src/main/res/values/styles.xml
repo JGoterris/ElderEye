@@ -12,4 +12,9 @@
         <item name="cornerSizeBottomLeft">60dp</item>
         <item name="cornerSizeBottomRight">60dp</item>
     </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/resaltarOption</item>
+        <item name="colorPrimaryDark">@color/resaltarOption</item>
+    </style>
 </resources>
