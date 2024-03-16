@@ -4,8 +4,11 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.firstlinedevs.eldereye.ElderEyeApplication.Companion.prefs
 
 class PersonActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +16,13 @@ class PersonActivity : AppCompatActivity() {
         setContentView(R.layout.activity_person)
 
         this.setTitle(R.string.title_person)
+        initUI()
         initListeners()
+    }
+
+    private fun initUI(){
+        val cbAlgoritmo = findViewById<CheckBox>(R.id.cbAlgoritmo)
+        cbAlgoritmo.isChecked = prefs.getAlgoritmo()
     }
 
     private fun initListeners(){
@@ -25,6 +34,16 @@ class PersonActivity : AppCompatActivity() {
         val btnIr = findViewById<Button>(R.id.btnIr)
         btnIr.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://maps.app.goo.gl/2NnLQX4N4koXCL578")))
+        }
+
+        val cbPulsaciones = findViewById<CheckBox>(R.id.cbAlgoritmo)
+        cbPulsaciones.setOnClickListener {
+            if(cbPulsaciones.isChecked){
+                mostrarDialogoAlgoritmoActivado()
+                prefs.saveAlgoritmo(true)
+            } else{
+                prefs.saveAlgoritmo(false)
+            }
         }
 
         val opPCamera = findViewById<ImageView>(R.id.opPCamera)
@@ -42,5 +61,13 @@ class PersonActivity : AppCompatActivity() {
             startActivity(settingsIntent)
             finish()
         }
+    }
+
+    fun mostrarDialogoAlgoritmoActivado() {
+        val algoritmoDialog = AlertDialog.Builder(this)
+        algoritmoDialog.setTitle("Algoritmo automático activado")
+        algoritmoDialog.setMessage("La inteligencia artificial para detectar anomalías cardiacas se ejecutará automáticamente cada 15 minutos.")
+        algoritmoDialog.setPositiveButton(android.R.string.yes) { dialog, which ->}
+        algoritmoDialog.show()
     }
 }
