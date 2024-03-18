@@ -46,6 +46,16 @@ class PersonActivity : AppCompatActivity() {
             }
         }
 
+        val btnLuz = findViewById<Button>(R.id.btnLuz)
+        btnLuz.setOnClickListener {
+            startActivity(Intent(this,LuzActivity::class.java))
+        }
+
+        val btnAsistente = findViewById<Button>(R.id.btnAsistente)
+        btnAsistente.setOnClickListener {
+            startActivity(Intent(this,AsistenteActivity::class.java))
+        }
+
         val opPCamera = findViewById<ImageView>(R.id.opPCamera)
         val cameraIntent = Intent(this,CameraActivity::class.java)
         cameraIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
