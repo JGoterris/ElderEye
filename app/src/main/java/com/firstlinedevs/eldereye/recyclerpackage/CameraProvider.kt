@@ -7,7 +7,7 @@ class CameraProvider {
         var cameraList: MutableList<CameraData> = mutableListOf(
             CameraData("Salón", R.drawable.camera1.toString()),
             CameraData("Dormitorio", R.drawable.camera2.toString()),
-            CameraData("Cocina", R.drawable.example.toString())
+            CameraData("Cocina", R.drawable.cocina.toString())
         )
     }
 }
