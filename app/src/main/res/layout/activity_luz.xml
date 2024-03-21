@@ -63,4 +63,64 @@
         app:layout_constraintTop_toTopOf="@id/ivUltimoMes"
         android:src="@drawable/consumototal"/>
 
+    <View
+        android:id="@+id/vSeparador2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUltimoMes"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vSeparador2"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:id="@+id/tvAviso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aviso de consumo a partir de "
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/etAviso"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etAviso"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:lines="1"
+            android:textSize="18sp"
+            android:enabled="false"
+            android:background="@color/white"
+            android:text="400"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="@id/tvAviso"
+            app:layout_constraintBottom_toBottomOf="@id/tvAviso"
+            app:layout_constraintStart_toEndOf="@id/tvAviso"
+            app:layout_constraintEnd_toStartOf="@id/tvKW"/>
+
+        <TextView
+            android:id="@+id/tvKW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="kW"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@id/etAviso"
+            app:layout_constraintTop_toTopOf="@id/etAviso"
+            app:layout_constraintBottom_toBottomOf="@id/etAviso"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

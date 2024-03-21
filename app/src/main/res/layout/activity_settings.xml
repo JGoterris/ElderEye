@@ -8,6 +8,130 @@
     android:background="@color/background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Perfil"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/vSeparador"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDispositivos"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clPerfil">
+
+        <TextView
+            android:id="@+id/tvDispositivos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Dispositivos"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/vSeparador2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAsistentes"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clDispositivos">
+
+        <TextView
+            android:id="@+id/tvAsistentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Asistentes"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/vSeparador3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCerrar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clAsistentes">
+
+        <TextView
+            android:id="@+id/tvCerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Cerrar Sesión"
+            android:textSize="25sp"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/vSeparador4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginTop="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/optionsCamera"
         android:layout_width="0dp"
         android:layout_height="50dp"

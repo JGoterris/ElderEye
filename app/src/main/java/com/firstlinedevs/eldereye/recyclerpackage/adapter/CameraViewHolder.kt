@@ -33,7 +33,7 @@ class CameraViewHolder(val view: View) : RecyclerView.ViewHolder(view){
     fun dialogoNoEjemplo() {
         val algoritmoDialog = AlertDialog.Builder(view.context)
         algoritmoDialog.setTitle("Sin ejemplo")
-        algoritmoDialog.setMessage("Para ver un ejemplo del funcionamiento de las cámaras con su IA, seleccionar la cámara Cocina.")
+        algoritmoDialog.setMessage("Para ver un ejemplo del funcionamiento de las cámaras con nuestra IA, seleccionar la cámara Cocina.")
         algoritmoDialog.setPositiveButton(android.R.string.yes) { dialog, which ->}
         algoritmoDialog.show()
     }

@@ -71,12 +71,25 @@ class PersonActivity : AppCompatActivity() {
             startActivity(settingsIntent)
             finish()
         }
+
+        val btnAlgoritmo = findViewById<Button>(R.id.btnAlgoritmo)
+        btnAlgoritmo.setOnClickListener {
+            mostrarDialogoAlgoritmoEjemplo()
+        }
     }
 
     fun mostrarDialogoAlgoritmoActivado() {
         val algoritmoDialog = AlertDialog.Builder(this)
         algoritmoDialog.setTitle("Algoritmo automático activado")
         algoritmoDialog.setMessage("La inteligencia artificial para detectar anomalías cardiacas se ejecutará automáticamente cada 15 minutos.")
+        algoritmoDialog.setPositiveButton(android.R.string.yes) { dialog, which ->}
+        algoritmoDialog.show()
+    }
+
+    fun mostrarDialogoAlgoritmoEjemplo() {
+        val algoritmoDialog = AlertDialog.Builder(this)
+        algoritmoDialog.setTitle("IRREGULARIDAD DETECTADA")
+        algoritmoDialog.setMessage("Se ha detectado una irregularidad de 100 ppm a las 17:45\n\nPulsaciones medias regulares a las 17:45 -> 65 ppm\n\nSi esta irregularidad persiste, nuestra IA lo detectará y le avisará")
         algoritmoDialog.setPositiveButton(android.R.string.yes) { dialog, which ->}
         algoritmoDialog.show()
     }
